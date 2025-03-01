@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FOREVER💕</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="garden.js"></script>
+<script type="text/javascript" src="functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space" /><span class="comments">*// THE SCRIPT OF US
+			</span><br />
+			<span class="space" /><span class="comments">*/</span><br />
+			Hey Trouble! 💖<br />
+			Remember when we couldn't stand each other? 😤🔥<br />
+			<span class="comments">// The endless arguments, the teasing, the stubbornness… </span><br />
+			And yet, somehow, through all that chaos—;<br />
+			We found something real. ❤️;<br />
+			Who would’ve thought that those little fights;<br />
+			Would turn into late-night chats and stolen glances? 💫;<br />
+			<span class="comments">// Life really had other plans for us, huh? 😉</span><br />
+			From pretending not to care to memorizing each other’s schedules;<br />
+			From distant glares to moments we never want to end. ❤️;<br />
+			We've only been intimately close once—;<br />
+			But that moment still lingers like a secret only we understand. ✨;<br />
+			And even with school, life, and everything in between;<br />
+			You're still my favorite part of the day. 🥹;<br />
+			If this is just the beginning;<br />
+			I can’t wait to see where we end up. 💞;<br />
+			<br>
+			<br>
+			All I want to say is:<br />
+			You're the best plot twist in my story. Forever. 😘;<br />
+			<br>
+			<br>
+			<br>
+			<span id="heartspan">
+			<a href="love.jpeg"><i class="fas fa-heart" id="icon"></i></a>
+			</span>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					yours truly and counting💕
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					I LOVE YOU SO MUCH<br/>
+					<div class="signature">- Badman</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2023, 12, 26);
+together.setHours(16);
+together.setMinutes(30);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
